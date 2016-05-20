@@ -725,14 +725,16 @@ static int android_verity_ctr(struct dm_target *ti, unsigned argc, char **argv)
 		goto free_metadata;
 	}
 
-	err = verify_verity_signature(key_id, metadata);
+	if (verity_enabled) {
+		err = verify_verity_signature(key_id, metadata);
 
-	if (err) {
-		DMERR("Signature verification failed");
-		handle_error();
-		goto free_metadata;
-	} else
-		DMINFO("Signature verification success");
+		if (err) {
+			DMERR("Signature verification failed");
+			handle_error();
+			goto free_metadata;
+		} else
+			DMINFO("Signature verification success");
+	}
 
 	table_ptr = metadata->verity_table;
 
