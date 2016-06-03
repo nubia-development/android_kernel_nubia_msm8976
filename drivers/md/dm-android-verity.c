@@ -612,6 +612,8 @@ static inline bool test_mult_overflow(sector_t a, u32 b)
 	return a > r;
 }
 
+	set_disk_ro(dm_disk(dm_table_get_md(ti->table)), 0);
+
 static int create_linear_device(struct dm_target *ti, dev_t dev,
 				char *target_device)
 {
