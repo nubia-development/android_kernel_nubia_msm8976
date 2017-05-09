@@ -45,6 +45,7 @@ static char veritymode[VERITY_COMMANDLINE_PARAM_LENGTH];
 static char veritykeyid[VERITY_DEFAULT_KEY_ID_LENGTH];
 static char buildvariant[BUILD_VARIANT];
 
+#ifndef MODULE
 static int __init verified_boot_state_param(char *line)
 {
 	strlcpy(verifiedbootstate, line, sizeof(verifiedbootstate));
@@ -76,6 +77,7 @@ static int __init verity_buildvariant(char *line)
 }
 
 __setup("buildvariant=", verity_buildvariant);
+#endif
 
 static inline bool default_verity_key_id(void)
 {
