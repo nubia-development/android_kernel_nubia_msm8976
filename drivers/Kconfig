@@ -193,4 +193,5 @@ source "drivers/soc/Kconfig"
 source "drivers/firmware/Kconfig"
 
 source "drivers/nubia/Kconfig"
+
 endmenu
