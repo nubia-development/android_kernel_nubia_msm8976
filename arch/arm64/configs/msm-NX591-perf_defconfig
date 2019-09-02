@@ -648,4 +648,4 @@ CONFIG_CPUSETS=y
 
 # Nubia configuration options -- Add by Cyborg2017(Cyborg Yang) [20190901]
 # CONFIG_MACH_NUBIA_NX589J is not set
-# CONFIG_MACH_NUBIA_NX591J=y
+CONFIG_MACH_NUBIA_NX591J=y
