@@ -68,7 +68,7 @@ dtb-$(CONFIG_ARCH_MSM8909) += msm8909-sim.dtb \
 ifeq ($(CONFIG_MACH_NUBIA_NX589J),y)
 dtb-$(CONFIG_ARCH_MSM8916) += msm8976-NX589J-mtp.dtb \
        msm8976-v1.1-common-mtp.dtb
-else ifeq ($(CONFIG_MACH_NUBIA_NX589J),y)
+else ifeq ($(CONFIG_MACH_NUBIA_NX591J),y)
 dtb-$(CONFIG_ARCH_MSM8916) += msm8976-NX591J-mtp.dtb \
        msm8976-v1.1-common-mtp.dtb
 else
