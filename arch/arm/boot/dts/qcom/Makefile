@@ -65,8 +65,12 @@ dtb-$(CONFIG_ARCH_MSM8909) += msm8909-sim.dtb \
 	msm8208-1gb-rcm.dtb \
 	msm8208-qhd-cdp.dtb \
 	msm8208-qhd-rcm.dtb
-ifneq ($(NUBIA_DTS_NAME),)
-dtb-$(CONFIG_ARCH_MSM8916) += $(NUBIA_DTS_NAME)
+ifeq ($(CONFIG_MACH_NUBIA_NX589J),y)
+dtb-$(CONFIG_ARCH_MSM8916) += msm8976-NX589J-mtp.dtb \
+       msm8976-v1.1-common-mtp.dtb
+else ifeq ($(CONFIG_MACH_NUBIA_NX589J),y)
+dtb-$(CONFIG_ARCH_MSM8916) += msm8976-NX591J-mtp.dtb \
+       msm8976-v1.1-common-mtp.dtb
 else
 dtb-$(CONFIG_ARCH_MSM8916) += msm8916-sim.dtb \
 	msm8916-rumi.dtb \
