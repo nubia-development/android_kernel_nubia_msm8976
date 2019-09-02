@@ -14,3 +14,4 @@
 #include "touch.dtsi"
 #include "finger.dtsi"
 #include "sensors.dtsi"
+#include "../nubia_common/head-nubia-common.dtsi"

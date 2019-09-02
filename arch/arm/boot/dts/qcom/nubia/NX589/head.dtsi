@@ -13,3 +13,4 @@
 #include "camera.dtsi"
 #include "camera-pinctrl.dtsi"
 #include "sensors.dtsi"
+#include "../nubia_common/head-nubia-common.dtsi"
