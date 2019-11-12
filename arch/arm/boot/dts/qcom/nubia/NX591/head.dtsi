@@ -5,6 +5,7 @@
 #include "sample.dtsi"
 #include "others.dtsi"
 #include "audio.dtsi"
+#include "../nubia_common/camera-nubia-common.dtsi"
 #include "camera.dtsi"
 #include "camera-pinctrl.dtsi"
 #include "nfc.dtsi"
