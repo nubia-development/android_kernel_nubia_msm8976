@@ -1,3 +1,4 @@
-#include "pm-nubia-common.dtsi"
-#include "pinctrl-nubia-common.dtsi"
+#include "camera-nubia-common.dtsi"
 #include "batterydata-nubia-common.dtsi"
+#include "pinctrl-nubia-common.dtsi"
+#include "pm-nubia-common.dtsi"
