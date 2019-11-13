@@ -10,7 +10,6 @@
 #include "nfc.dtsi"
 #include "finger.dtsi"
 #include "audio.dtsi"
-#include "../nubia_common/camera-nubia-common.dtsi"
 #include "camera.dtsi"
 #include "camera-pinctrl.dtsi"
 #include "sensors.dtsi"
