@@ -17,7 +17,7 @@
  */
 
 
-#include "../nubia_panel/nubia_panel.dtsi"
+#include "../nubia_panel/NX591J_panel.dtsi"
 &soc {
 	mdss_dsi: qcom,mdss_dsi@0 {
 		mdss_dsi0: qcom,mdss_dsi_ctrl0@1a94000 {
