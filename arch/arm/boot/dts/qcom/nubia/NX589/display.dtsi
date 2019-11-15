@@ -15,7 +15,7 @@
  * ADD display configuration
  */
 
-#include "../nubia_panel/nubia_panel.dtsi"
+#include "../nubia_panel/NX589J_panel.dtsi"
 
 &soc {
 	mdss_dsi: qcom,mdss_dsi@0 {
