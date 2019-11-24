@@ -633,11 +633,11 @@ CONFIG_NUBIA_SENSORS_RGB_BH1745=y
 CONFIG_NUBIA_SENSORS_PROX_PA224=y
 CONFIG_CPUSETS=y
 
-# Nubia configuration options -- Add by Cyborg2017(Cyborg Yang) [20190901]
+# Nubia configuration options -- Add by Cyborg2017(Yang Cyborg) [20190901]
 # CONFIG_MACH_NUBIA_NX589J is not set
 CONFIG_MACH_NUBIA_NX591J=y
 
-# Prima wlan driver -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Prima wlan driver -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_PRONTO_WLAN=y
 CONFIG_PRIMA_WLAN_LFR=y
 CONFIG_PRIMA_WLAN_OKC=y
@@ -648,31 +648,31 @@ CONFIG_QCOM_VOWIFI_11R=y
 CONFIG_ENABLE_LINUX_REG=y
 CONFIG_QCOM_TDLS=y
 
-# Qcom msm console -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Qcom msm console -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_SERIAL_MSM_HS=y
 CONFIG_SERIAL_MSM_HSL=y
 CONFIG_SERIAL_MSM_HSL_CONSOLE=y
 
-# Enable BFQ -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Enable BFQ -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_IOSCHED_BFQ=y
 CONFIG_CGROUP_BFQIO=y
 
-# Enable cpusets -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Enable cpusets -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_CPUSETS=y
 CONFIG_CPU_FREQ_GOV_CONSERVATIVE=y
 CONFIG_CPU_BOOST=y
 
-# Enable SDCARD FS -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Enable SDCARD FS -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_SDCARD_FS=y
 
-# Update configs for Oreo/Pie -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Update configs for Oreo/Pie -- Add by Cyborg2017(Yang Cyborg) [20190902]
 CONFIG_IP_MULTICAST=y
 CONFIG_INET_DIAG_DESTROY=y
 CONFIG_NETFILTER_XT_TARGET_TCPMSS=y
 CONFIG_PROC_DEVICETREE=y
 CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder"
 
-# Enable support for sdFAT filesystem -- Add by Cyborg2017(Cyborg Yang) [20190902]
+# Enable support for sdFAT filesystem -- Add by Cyborg2017(Yang Cyborg) [20190902]
 # CONFIG_NLS_CODEPAGE_437 is not set
 # CONFIG_NLS_ISO8859_1 is not set
 # CONFIG_NLS_UTF8 is not set
@@ -682,3 +682,11 @@ CONFIG_FAT_DEFAULT_IOCHARSET="utf8"
 CONFIG_SDFAT_FS=y
 CONFIG_SDFAT_SUPPORT_DIR_SYNC=y
 CONFIG_SDFAT_CHECK_RO_ATTR=y
+
+# Enable support for system dm-verity -- Add by Cyborg2017(Yang Cyborg) [20191124]
+CONFIG_BLK_DEV_MD=y
+CONFIG_MD_LINEAR=y
+CONFIG_DM_ANDROID_VERITY=y
+CONFIG_PKCS7_MESSAGE_PARSER=y
+CONFIG_SYSTEM_TRUSTED_KEYRING=y
+CONFIG_SYSTEM_TRUSTED_KEYS="verity.x509.pem"
